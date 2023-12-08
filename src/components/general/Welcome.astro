@@ -1,5 +1,6 @@
 ---
 import { Image } from 'astro:assets'
+import { Icon } from 'astro-icon'
 
 import logoImage from '../../assets/logo.jpg';
 
@@ -17,12 +18,14 @@ import slide5 from '../../assets/slide-5.jpg';
         prose-p:text-pacamara-primary/50 dark:prose-p:text-white/70 prose-p:mb-0 prose-p:transition-all prose-p:duration-300
         prose-img:mt-0 prose-img:mb-0  
         dark:prose-headings:text-white
+        dark:prose-strong:text-white
     ">
-    <Image src={logoImage} width={200} alt="" loading="eager" decoding="sync" class="relative w-[150px] lg:w-[220px] rounded-[15px] image-shine"  />
-    <p>
-        Aromatic brew, pure indulgence, exquisite satisfaction.
+    <!-- <Image src={logoImage} width={200} alt="" loading="eager" decoding="sync" class="relative w-[150px] lg:w-[220px] rounded-[15px] image-shine"  /> -->
+    <p class="flex items-center">
+        <Icon name="ion:location" class="w-auto h-[20px] pr-2" />
+        <strong>Mwambani, Tanga, Tanzania</strong>, East-Africa, Planet Erde, Milchstrasse
     </p>
-    <h1><span class="gradient-underline"><span>Awaken your senses to the tantalizing allure of specialty coffee bliss.</span></span></h1>
+    <h1><span class="gradient-underline"><span>"Macht bitte keinen Reiseblog", sprachen sie.<br />Also machten wir einen Reiseblog.</span></span></h1>
 </section>
 
 <section class="my-10 flex justify-center gap-5 overflow-hidden py-4 sm:gap-10">
