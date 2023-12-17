@@ -13,10 +13,11 @@ const type = postData?.data?.type ? postData.data.type : "website";
 
 <title>{title}</title>
 <meta name="title" content={title} />
-<!-- 
 {description && <meta name="description" content={description} />}
 
-<meta property="og:type" content={type} />
+<meta name="robots" content="noindex, nofollow" />
+
+<!-- <meta property="og:type" content={type} />
 <meta property="og:title" content={title} />
 {permalink && <meta property="og:url" content={permalink} />}
 {description && <meta property="og:description" content={description} />}
