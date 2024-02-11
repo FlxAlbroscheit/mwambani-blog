@@ -8,10 +8,11 @@ import '../css/style.css';
 const { postData } = Astro.props;
 ---
 <!doctype html>
-<html lang="en">
+<html lang="en" class="dark">
 
 <head>
     <script is:inline>
+        return; 
         const setDarkMode = () => {
             if (localStorage.darkMode === 'true' || (!('darkMode' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
                 document.documentElement.classList.add('dark')
