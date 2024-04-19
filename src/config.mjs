@@ -4,7 +4,7 @@ export default {
   description:
     "Privater Reiseblog mit Kurzstoreys über das Ankommen in maritimen Gedankenwelten",
   defaultOgImage: "./defaultog.jpg",
-  latestPosts: 5,
+  latestPosts: 999,
   postsPerPage: 3,
   url: "https://pacamara-astro-6y7xr.kinsta.page",
   social: {
